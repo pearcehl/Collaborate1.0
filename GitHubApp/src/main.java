@@ -16,7 +16,13 @@ public class main {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("here's our assignment!");
+<<<<<<< HEAD
         System.out.println("I don't want to do this assignment"); 
+=======
+        System.out.println("Its a doozy");
+
+
+>>>>>>> 4fc8480683f3df52f2ffbd2e59caa13474f3eae5
     }
 
 }
