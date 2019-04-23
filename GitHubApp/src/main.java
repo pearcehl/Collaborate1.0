@@ -49,6 +49,17 @@ public class main {
                 case 2:
 
                     System.out.println("Executing Attack 2");
+                    int i;
+                    try {
+                        FileWriter b1 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\ReadMe.txt");
+                        for(i=0; i>100; i++){
+                        b1.write("HA HA HA \n");
+                        }
+                        b1.close();
+                   } catch (Exception e) {
+                        System.out.println(e);
+                    }
+                    System.out.println("Success...");
                     break;
 
                 case 3:
