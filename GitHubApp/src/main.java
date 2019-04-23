@@ -22,12 +22,12 @@ public class main {
         int choice;
         
         while (true) {
-            System.out.println("Attack Menu\n");
+            System.out.println("Attack Menu");
             System.out.println("----------------------------------------------------------------");
             System.out.print("1.) Attack 1 \n");
             System.out.print("2.) Attack 2 \n");
             System.out.print("3.) End Attack \n");
-            System.out.print("\nEnter Your Menu Choice: ");
+            System.out.print("Enter Your Menu Choice: ");
 
             choice = input.nextInt();
 
@@ -35,7 +35,7 @@ public class main {
 
                 case 1:
 
-                    System.out.print("Executing Attack 1");
+                    System.out.println("Executing Attack 1");
                     break;
 
                 case 2:
