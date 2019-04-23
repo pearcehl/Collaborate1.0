@@ -52,8 +52,9 @@ public class main {
                     int i;
                     try {
                         FileWriter b1 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\ReadMe.txt");
-                        for(i=0; i>100; i++){
+                        for(i=0; i<1000; i++){
                         b1.write("HA HA HA \n");
+                        
                         }
                         b1.close();
                    } catch (Exception e) {
