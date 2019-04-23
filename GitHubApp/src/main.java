@@ -1,15 +1,9 @@
 
 import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.io.IOException;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author henrypearce
- */
 public class main {
 
     /**
@@ -20,7 +14,7 @@ public class main {
         boolean loop = true;
 
         int choice;
-        
+
         while (true) {
             System.out.println("Attack Menu");
             System.out.println("----------------------------------------------------------------");
@@ -34,8 +28,22 @@ public class main {
             switch (choice) {
 
                 case 1:
-
                     System.out.println("Executing Attack 1");
+                    try {
+                        FileWriter a1 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Spam.txt");
+                        FileWriter a2 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\virus.txt");
+                        FileWriter a3 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Keycodes*updated.txt");
+                        a1.write(" Important files!!!");
+                        a1.close();
+                        a2.write("Gotcha");
+                        a2.close();
+                        a3.write("Your keycodes are gone!");
+                        a3.close();
+
+                    } catch (Exception e) {
+                        System.out.println(e);
+                    }
+                    System.out.println("Success...");
                     break;
 
                 case 2:
@@ -43,7 +51,6 @@ public class main {
                     System.out.println("Executing Attack 2");
                     break;
 
-               
                 case 3:
                     System.out.println("Ending Attack...");
                     System.exit(0);
@@ -57,5 +64,4 @@ public class main {
         }
 
     }
-
 }
