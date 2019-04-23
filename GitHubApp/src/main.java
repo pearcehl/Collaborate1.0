@@ -28,17 +28,30 @@ public class main {
             switch (choice) {
 
                 case 1:
+                    int j;
                     System.out.println("Executing Attack 1");
                     try {
                         FileWriter a1 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Spam.txt");
                         FileWriter a2 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\virus.txt");
                         FileWriter a3 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\UpdatedKeyCodes.txt");
+                        FileWriter a4 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\WhoAmI.txt");
+                        FileWriter a5 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\WhereAmI.txt");
+                        FileWriter a6 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Whoops.txt");
                         a1.write(" Important files!!!");
                         a1.close();
-                        a2.write("Gotcha");
+                        for(j=0; j<500; j++){
+                        a2.write("Gotcha \n");
+                        
+                        }
                         a2.close();
                         a3.write("Your keycodes are gone!");
                         a3.close();
+                        a4.write("Who am I? \n" + " Why cant i see? \n" + "Where are your root files?");
+                        a4.close();
+                        a5.write("I think i took a wrong turn. Can you point me in the right direction to your root directory?");
+                        a5.close();
+                        a6.write("Press F for me. ");
+                        a6.close();
 
                     } catch (Exception e) {
                         System.out.println(e);
