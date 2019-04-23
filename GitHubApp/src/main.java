@@ -17,9 +17,11 @@ public class main {
         // TODO code application logic here
         System.out.println("here's our assignment!");
         System.out.println("I don't want to do this assignment");
+<<<<<<< HEAD
         System.out.println("Netbeans Test");
+=======
+>>>>>>> 6c2071038311a6990934569757bedf1a56a57ca8
         System.out.println("Its a doozy");
-
     }
 
 }
