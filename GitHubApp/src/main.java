@@ -32,7 +32,7 @@ public class main {
                     try {
                         FileWriter a1 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Spam.txt");
                         FileWriter a2 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\virus.txt");
-                        FileWriter a3 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Keycodes*updated.txt");
+                        FileWriter a3 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\UpdatedKeyCodes.txt");
                         a1.write(" Important files!!!");
                         a1.close();
                         a2.write("Gotcha");
