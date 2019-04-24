@@ -46,7 +46,7 @@ public class main {
                         a2.close();
                         a3.write("Your keycodes are gone!");
                         a3.close();
-                        a4.write("Who am I? \n" + " Why cant i see? \n" + "Where are your root files?");
+                        a4.write("Who am I? Why cant i see? Where are your root files?");
                         a4.close();
                         a5.write("I think i took a wrong turn. Can you point me in the right direction to your root directory?");
                         a5.close();
