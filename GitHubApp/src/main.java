@@ -34,6 +34,7 @@ public class main {
                     FileWriter a4;
                     FileWriter a5;
                     FileWriter a6;
+                    //current FileWriter configuration operable with windows
                     try (FileWriter a1 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Spam.txt")) {
                         a2 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\virus.txt");
                         a3 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\UpdatedKeyCodes.txt");
