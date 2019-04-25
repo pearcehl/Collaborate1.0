@@ -1,7 +1,6 @@
 
 import java.util.Scanner;
 import java.io.FileWriter;
-import java.io.PrintWriter;
 import java.io.IOException;
 
 public class main {
@@ -30,18 +29,21 @@ public class main {
                 case 1:
                     int j;
                     System.out.println("Executing Attack 1");
-                    try {
-                        FileWriter a1 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Spam.txt");
-                        FileWriter a2 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\virus.txt");
-                        FileWriter a3 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\UpdatedKeyCodes.txt");
-                        FileWriter a4 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\WhoAmI.txt");
-                        FileWriter a5 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\WhereAmI.txt");
-                        FileWriter a6 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Whoops.txt");
+                    FileWriter a2;
+                    FileWriter a3;
+                    FileWriter a4;
+                    FileWriter a5;
+                    FileWriter a6;
+                    try (FileWriter a1 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Spam.txt")) {
+                        a2 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\virus.txt");
+                        a3 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\UpdatedKeyCodes.txt");
+                        a4 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\WhoAmI.txt");
+                        a5 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\WhereAmI.txt");
+                        a6 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\Whoops.txt");
                         a1.write(" Important files!!!");
-                        a1.close();
-                        for(j=0; j<500; j++){
-                        a2.write("Gotcha \n");
-                        
+
+                        for (j = 0; j < 500; j++) {
+                            a2.write("Gotcha \n");
                         }
                         a2.close();
                         a3.write("Your keycodes are gone!");
@@ -52,8 +54,7 @@ public class main {
                         a5.close();
                         a6.write("Press F for me. ");
                         a6.close();
-
-                    } catch (Exception e) {
+                    } catch (IOException e) {
                         System.out.println(e);
                     }
                     System.out.println("Success...");
@@ -63,14 +64,12 @@ public class main {
 
                     System.out.println("Executing Attack 2");
                     int i;
-                    try {
-                        FileWriter b1 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\ReadMe.txt");
-                        for(i=0; i<1000; i++){
-                        b1.write("HA HA HA \n");
-                        
+                    try (FileWriter b1 = new FileWriter("C:\\Users\\clear\\Documents\\FinalWeek\\ReadMe.txt")) {
+                        for (i = 0; i < 1000; i++) {
+                            b1.write("HA HA HA \n");
+
                         }
-                        b1.close();
-                   } catch (Exception e) {
+                    } catch (IOException e) {
                         System.out.println(e);
                     }
                     System.out.println("Success...");
